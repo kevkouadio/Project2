@@ -1,0 +1,352 @@
+/* NAVIGATION HEADING*/
+#cssmenu > ul > #menu-button {
+
+    display: none;
+    height:20px;
+    color:#fff;
+    padding:15px;
+    font-size:14px;
+    font-weight: 600;
+  
+  }
+  
+  #cssmenu > ul > li > a {
+  
+    font-size:18px;
+    padding: 35px 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform:uppercase;
+  }
+  
+  #cssmenu > ul > li:hover > a {
+    color: #f7bb26;
+  }
+  #cssmenu > ul > li:visited > a {
+    color: #412e1d;
+  }
+  
+  /*---------DROP DOWN KO CHANGE GARNE ------------*/
+  #cssmenu ul ul li a {
+    width: 80px;
+    border-bottom: 1px solid #eee;
+    padding: 10px 24px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform:uppercase;
+    background: #f9ba27; /* first dropdown menu bg color*/
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+  }
+  #cssmenu ul ul li:hover > a {
+    background: #f9ba27;/* first dropdown menu bg hover color*/
+    color: #000;
+  }
+  
+  /*---------------------------------------------------*/
+  
+  @media all and (max-width: 1280px){
+      #cssmenu > ul > li > a {
+          padding:35px 5px;
+      
+              
+          
+      }
+  }
+  
+  
+  @media all and (max-width: 1024px){
+      #cssmenu > ul > li > a {
+          padding:35px 8px;
+          
+      
+              
+          
+      }
+  }
+  /*-------------------------------------------------*/
+  
+  
+  #cssmenu {
+    position: relative;
+    width: 100%;
+  }
+  #cssmenu ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    
+  }
+  #cssmenu > ul {
+    position: relative;
+    height:60px; /* menu height */
+    width: 100%;
+    z-index: 500;
+  
+  
+  }
+  #cssmenu > ul > li {
+   /* display: block;*/
+    position: relative;
+    /*float: left;   remove for verticale menu*/
+    margin: 0;
+    padding: 0; 
+  }
+  
+  #cssmenu ul {
+          text-align:center;
+  }
+  #cssmenu li {
+          display:inline-block;
+          *display:inline; /*IE7*/
+          *zoom:1; /*IE7*/
+          color:white;
+  }
+  
+  
+  
+  /*------------------------*/
+  
+  /*MENU PROPERTY*/
+  
+  #cssmenu ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  #cssmenu > ul > li > a {
+    -webkit-transition: color 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out;
+    -ms-transition: color 0.25s ease-out;
+    -o-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
+  }
+  #cssmenu > ul > li.has-sub > a {
+    padding-right: 32px;
+  }
+  
+  
+  /*------------------------*/
+  
+  
+  #cssmenu li.has-sub::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  #cssmenu > ul > li.has-sub::after {
+    
+   
+  }
+  #cssmenu > ul > li:hover::after {
+    
+  }
+  #indicatorContainer {
+    position: absolute;
+    height: 12px;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  #pIndicator {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    border: 12px solid transparent;
+  
+    z-index: -2;
+    -webkit-transition: left .25s ease;
+    -moz-transition: left .25s ease;
+    -ms-transition: left .25s ease;
+    -o-transition: left .25s ease;
+    transition: left .25s ease;
+  }
+  #cIndicator {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    border: 12px solid transparent;
+   
+    top: -12px;
+    right: 100%;
+    z-index: -2;
+  }
+  #cssmenu ul ul {
+    position: absolute;
+    left: -9999px;
+    top: 70px;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease, top .25s ease;
+    -moz-transition: opacity .3s ease, top .25s ease;
+    -ms-transition: opacity .3s ease, top .25s ease;
+    -o-transition: opacity .3s ease, top .25s ease;
+    transition: opacity .3s ease, top .25s ease;
+    z-index: 1000;
+  }
+  #cssmenu ul ul ul {
+    top: 37px;
+    padding-left: 5px;
+  }
+  #cssmenu ul ul li {
+    position: relative;
+  }
+  #cssmenu > ul > li:hover > ul {
+    left: auto;
+    top: 65px; /* dropdown align*/
+    opacity: 1;
+  }
+  #cssmenu ul ul li:hover > ul {
+    left: 170px;
+    top: 0;
+    opacity: 1;
+  }
+  
+  
+  #cssmenu ul ul li:last-child > a,
+  #cssmenu ul ul li.last > a {
+    border-bottom: 0;
+  }
+  .submenuArrow {
+    border: 6px solid transparent;
+    width: 0;
+    height: 0;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: -12px;
+  }
+  #cssmenu ul ul li.has-sub::after {
+    
+    right: 10px;
+    top: 12px;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition: -webkit-transform 0.2s ease, right 0.2s ease;
+  }
+  #cssmenu ul ul li.has-sub:hover::after {
+    border-left-color: #fff;
+    right: -5px;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  
+  
+  @media all and (max-width: 980px){
+      
+      
+    #cssmenu {
+      width: auto;
+      display:block;
+    }
+    #cssmenu ul {
+      width: auto;
+      
+    }
+    #cssmenu .submenuArrow,
+    #cssmenu #indicatorContainer {
+      display: none;
+    }
+    #cssmenu > ul {
+      height: auto;
+      display: block;
+    }
+    #cssmenu > ul > li {
+      float: none;
+    }
+    #cssmenu li,
+    #cssmenu > ul > li {
+      display: none;
+    }
+    #cssmenu ul ul,
+    #cssmenu ul ul ul,
+    #cssmenu ul > li:hover > ul,
+    #cssmenu ul ul > li:hover > ul {
+      position: relative;
+      left: auto;
+      top: auto;
+      opacity: 1;
+      padding-left: 0;
+    }
+    #cssmenu ul .has-sub::after {
+      display: none;
+    }
+    #cssmenu ul li a {
+      padding: 12px 20px;
+      font-size:16px;
+      
+    }
+    #cssmenu ul ul li a {
+      border: 0;
+      background: none;
+      width: auto;
+      color: #ff0000;
+      padding: 8px 35px;
+    }
+    #cssmenu ul ul li:hover > a {
+      background: none;
+      color: #fff;
+    }
+    #cssmenu ul ul ul a {
+      padding: 8px 50px;
+  
+    }
+    #cssmenu ul ul ul ul a {
+      padding: 8px 65px;
+    }
+    #cssmenu ul ul ul ul ul a {
+      padding: 8px 80px;
+    }
+    #cssmenu ul ul ul ul ul ul a {
+      padding: 8px 95px;
+    }
+    #cssmenu > ul > #menu-button {
+      display: block;
+      cursor: pointer;
+    }
+    #cssmenu #menu-button > a {
+      padding: 14px 20px;
+    }
+    #cssmenu ul.open li,
+    #cssmenu > ul.open > li {
+      display: block;
+    }
+    #cssmenu > ul.open > li#menu-button > a {
+      color: #fff;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+    }
+    #cssmenu #menu-button::after {
+      display: block;
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 22px;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      right: 20px;
+      top: 15px;
+    }
+    #cssmenu #menu-button::before {
+      display: block;
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 22px;
+      border-top: 2px solid #fff;
+      right: 20px;
+      top: 25px;
+    }
+    #cssmenu ul.open #menu-button::after,
+    #cssmenu ul.open #menu-button::before {
+      border-color: #fff;
+    }
+  }
