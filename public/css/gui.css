@@ -1,0 +1,88 @@
+.wz_error{ 
+    background-color:#FFEAEA;
+    border: 1px solid #990000;
+    padding:4px;
+    color: #990000;
+    margin:8px;
+    border-radius: 4px;
+}
+
+.wz_warning{ 
+    background-color:#fff4c0;
+    border: 1px solid #dd8b4f;
+    padding:4px;
+    color: #aa3d0d;
+    margin:8px;
+    border-radius: 4px;
+}
+
+.wz_success{ 
+    background-color:#EAFFEA;
+    border: 1px solid #007700;
+    padding:4px;
+    color: #007700;
+    margin:8px;
+    border-radius: 4px;
+}
+
+.wz_content{ 
+    border: 1px solid #777777;
+    padding:8px;
+    border-radius: 0px 0px 4px 4px;
+    margin:0px 1px 1px 1px;
+}
+
+.wz_adminbar{ 
+    background-color:#EEEEEE;
+    padding:3px;
+    border: 1px solid #AAAAAA;
+    border-bottom:0px;
+    margin:1px 1px 0px 1px;
+
+}
+
+.wz_bordered{ 
+    border: 1px solid #777777;
+}
+
+.wz_navtitle{ 
+    margin:0px;
+    margin-top:2px;
+    margin-bottom:6px;
+    color:#222222;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.wz_subtitle{ 
+    margin:0px;
+    margin-top:2px;
+    margin-bottom:6px;
+    color:#333333;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.wz_formtitle{ 
+    margin:0px;
+    margin-top:2px;
+    margin-bottom:2px;
+    color:#222222;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.wz_navitem{ 
+    margin-left:4px;
+    padding:2px;
+}
+
+.wz_vspace{ 
+    height:12px;
+}
+
+.wz_hnavitem{ 
+    float:left;
+    margin-right:8px;
+    padding:4px;
+}
