@@ -4,6 +4,7 @@ $(document).ready(function() {
   var titleInput = $("#title");
   var cmsForm = $("#cms");
   var authorSelect = $("#author");
+  var imgFile = $("#inputGroupFile02");
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
@@ -40,6 +41,9 @@ $(document).ready(function() {
         .val()
         .trim(),
       body: bodyInput
+        .val()
+        .trim(),
+      image: imgFile
         .val()
         .trim(),
       AuthorId: authorSelect.val()
@@ -136,5 +140,25 @@ $(document).ready(function() {
   $(".custom-file-input").on("change", function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+
+  //Preview selected image
+  let imagesPreview = function(input, placeToInsertImagePreview) {
+    if (input.files) {
+      let filesAmount = input.files.length;
+      for (i = 0; i < filesAmount; i++) {
+        let reader = new FileReader();
+        reader.onload = function(event) {
+          $($.parseHTML("<img>"))
+            .attr("src", event.target.result)
+            .appendTo(placeToInsertImagePreview);
+        };
+        reader.readAsDataURL(input.files[i]);
+      }
+    }
+  };
+  $(".custom-file-input").on("change", function() {
+    $('.preview-images').empty();
+    imagesPreview(this, "div.preview-images");
   });
 });

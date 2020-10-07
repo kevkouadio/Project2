@@ -78,6 +78,8 @@ $(document).ready(function() {
     editBtn.text("EDIT");
     editBtn.addClass("edit btn btn-info");
     var newPostTitle = $("<h2>");
+    //var newPostImage = $("<img>");
+
     var newPostDate = $("<small>");
     var newPostAuthor = $("<h5>");
     newPostAuthor.text("Written by: " + post.Author.name);
@@ -92,6 +94,10 @@ $(document).ready(function() {
     var newPostBody = $("<p>");
     newPostTitle.text(post.title + " ");
     newPostBody.text(post.body);
+
+    // newPostImage.append(post.image);
+    // newPostBody.append(newPostImage);
+    
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
     newPostCardHeading.append(deleteBtn);
