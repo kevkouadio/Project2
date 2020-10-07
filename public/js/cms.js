@@ -137,4 +137,24 @@ $(document).ready(function() {
     var fileName = $(this).val().split("\\").pop();
     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
   });
+
+  //Preview selected image
+  let imagesPreview = function(input, placeToInsertImagePreview) {
+    if (input.files) {
+      let filesAmount = input.files.length;
+      for (i = 0; i < filesAmount; i++) {
+        let reader = new FileReader();
+        reader.onload = function(event) {
+          $($.parseHTML("<img>"))
+            .attr("src", event.target.result)
+            .appendTo(placeToInsertImagePreview);
+        };
+        reader.readAsDataURL(input.files[i]);
+      }
+    }
+  };
+  $(".custom-file-input").on("change", function() {
+    $('.preview-images').empty();
+    imagesPreview(this, "div.preview-images");
+  });
 });

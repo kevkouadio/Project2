@@ -45,3 +45,8 @@ button.edit {
 .top-30 {
   margin-top: 30px;
 }
+
+div.preview-images > img {
+        width: 30%;
+}
+   
