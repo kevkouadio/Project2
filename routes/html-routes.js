@@ -44,7 +44,7 @@ module.exports = function(app) {
   
   // blog route loads blog.html
   app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/Contact.html"));
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
   // menu handlebars route.
