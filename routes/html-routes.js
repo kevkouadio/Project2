@@ -36,15 +36,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/author-manager.html"));
   });
 
-  // index route loads view.html
-  app.get("/home", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html")); 
-  });
-
-  
   // blog route loads blog.html
   app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
+  });
+  
+  // index route loads view.html
+  app.get("/home", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/index.html")); 
   });
 
   // menu handlebars route.
@@ -67,7 +66,6 @@ module.exports = function(app) {
 
       //pass object to the specified handle bars files
       res.render("dish", testmenu)
-      //res.json(testmenu)
     });
 
   })
