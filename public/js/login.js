@@ -6,7 +6,7 @@ function check(event)
  if(event.target.form.username.value == "username" && event.target.form.Password.value == "password")
   {
     //opens the target page while Id & password matches
-    window.location.href = 'blog.html';
+    window.location.href = '/blog.html';
   }
  else
  {

@@ -17,7 +17,7 @@ module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // index route loads view.html
-  app.get("/connect", function(req, res) {
+  app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
@@ -41,8 +41,13 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/index.html")); 
   });
 
-  // cms route loads cms.
   
+  // blog route loads blog.html
+  app.get("/contact", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/Contact.html"));
+  });
+
+  // menu handlebars route.
   app.get("/menu", function(req, res) {
     db.Post.findAll({
     }).then(function(menu) {
@@ -66,10 +71,5 @@ module.exports = function(app) {
     });
 
   })
-  
 
-  // blog route loads blog.html
-  app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/Contact.html"));
-  });
 };
