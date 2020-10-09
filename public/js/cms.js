@@ -4,7 +4,7 @@ $(document).ready(function() {
   var titleInput = $("#title");
   var cmsForm = $("#cms");
   var authorSelect = $("#author");
-  var imgFile = $("#inputGroupFile02");
+  var imageInput = $("#image");
   // Adding an event listener for when the form is submitted
   $(cmsForm).on("submit", handleFormSubmit);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
@@ -32,7 +32,7 @@ $(document).ready(function() {
   function handleFormSubmit(event) {
     event.preventDefault();
     // Wont submit the post if we are missing a body, title, or author
-    if (!titleInput.val().trim() || !bodyInput.val().trim() || !authorSelect.val()) {
+    if (!titleInput.val().trim() || !bodyInput.val().trim() || !authorSelect.val() || !imageInput.val().trim() ) {
       return;
     }
     // Constructing a newPost object to hand to the database
@@ -43,7 +43,7 @@ $(document).ready(function() {
       body: bodyInput
         .val()
         .trim(),
-      image: imgFile
+      image: imageInput
         .val()
         .trim(),
       AuthorId: authorSelect.val()

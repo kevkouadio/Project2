@@ -7,7 +7,7 @@
                 <li class="active">
                     <a href="index.html#a1">Home</a></li>                    
                 <li><a href="/menu">Menu</a></li>
-                <li><a href="/contact">Contact</a></li>                     
+                <li><a href="contact.html">Contact</a></li>                     
             </ul>                            
             </div>
         </div>
@@ -21,20 +21,25 @@
           <div class="col-lg-8">
     
         {{#items}}
-<div class="card-body">
-        <ul class="list-group">
-            <button class="btn-primary"id="dish"class="list-group-item"><h5>{{this.title}}</h5></button>
-            <li class="list-group-item"><p>{{this.body}}</p></li>
-        </ul>
-    </div>
+<br>
+<div class="card" style="width: 35rem;">
+  <button class="btn-primary"id="dish"class="list-group-item"><h5>{{this.title}}</h5></button>
+  <img src="{{this.image}}" class="card-img-top" alt="{{this.title}}">
+  <div class="card-body">
+    {{!-- <h5 class="card-title">Card title</h5> --}}
+    <p class="card-text">{{this.body}}</p>
+    {{!-- <a href="#" class="btn btn-primary"></a> --}}
+  </div>
+</div>
+<br>
     {{/items}}
-          
         </div>
         <div class="col-lg-4">
+          <br>
               <div class="card" style="width: 22rem;">
                 <div class="card-body">
                   <h5 class="card-title" align="center">Your Order:</h5>
-                  <ol class="card-text"></ol>
+                  <ul class="card-text" id="yOrder"></ul>
                 </div>
               </div>
         </div>
