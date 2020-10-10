@@ -7,6 +7,9 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 
+//images 
+app.use(express.static('images'));
+
 // Sets up the Express App
 // =============================================================
 var app = express();
