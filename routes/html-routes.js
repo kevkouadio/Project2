@@ -16,7 +16,7 @@ module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads view.html
+  // index route loads login page
   app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
@@ -40,7 +40,7 @@ module.exports = function(app) {
   app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
-  
+
   // index route loads view.html
   app.get("/home", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html")); 
@@ -55,7 +55,8 @@ module.exports = function(app) {
       let newArray = menu.map(item => {
         return {
           title: item.title,
-          body: item.body
+          body: item.body,
+          image: item.image
         }
       })
    
