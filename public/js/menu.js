@@ -10,9 +10,25 @@ $(document).ready(function () {
     var orderItem = orderLi.append(newOrder);
     var oItem = orderItem.append(orderBtn);
 
+
         $('#yOrder').append(oItem);
       }
     );
+
+    import {
+        categorySection,
+        categoryName,
+        menu
+    } from 'layouts/menu.handlebars';
+    import { itemsList } from 'layouts/menu.handlebars';
+    import {
+        itemContainer,
+        name, 
+    } from 'layouts.menu.handlebars';
+
+    const { string } = PropTypes;
+
+
     //Delete item from menu 
     $(".btn-danger").live("click", function(event) {
         $(this).parent().remove();
