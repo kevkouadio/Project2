@@ -1,0 +1,21 @@
+<div class="container">
+  <br>
+  <h2 align="center" id="Opage">Here are all your customers'orders</h2>
+  <br>
+    {{#items}}
+        <div class="col-lg-4"> 
+            <div class="card" style="width: 22rem;"id="order">
+            <h6 align="center">Order for {{this.customerName}}</h6>
+              <div class="card-body" >
+                  <ul>
+                    <li>{{this.order}}</li>
+                  </ul>
+              </div>
+              <button class="delete btn-danger" id="clearO">Remove order</button>
+            </div>
+        </div> 
+    {{/items}} 
+    <br>            
+</div>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/order.js" type="text/javascript"></script>

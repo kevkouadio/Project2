@@ -74,4 +74,28 @@ module.exports = function(app) {
 
   })
 
+  app.get("/orders", function(req, res) {
+    db.orders.findAll({
+    }).then(function(orders) {
+
+      //create a new array from the array that is returned from the database
+      let newArray = orders.map(item => {
+        return {
+          customerName: item.customerName,
+          order: item.order
+        }
+      })
+
+//create an object and put the array inside of the object
+      let testOrder= {
+        items: newArray
+      };
+
+      //pass object to the specified handle bars files
+      res.render("orders", testOrder)
+      //res.json(testmenu)
+    });
+
+  })
+
 };

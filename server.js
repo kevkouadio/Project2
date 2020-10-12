@@ -7,8 +7,8 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
 
-//images 
-app.use(express.static('images'));
+// //images 
+// app.use(express.static('public/images'));
 
 // Sets up the Express App
 // =============================================================
@@ -33,7 +33,7 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 require("./routes/author-api-routes.js")(app);
 require("./routes/post-api-routes.js")(app);
-//require("./routes/handlebars-routes.js")(app);
+require("./routes/order-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

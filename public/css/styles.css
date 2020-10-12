@@ -53,6 +53,10 @@ div.preview-images > img {
 .col-lg-4 {
   margin-top: 10px;
 }
+
+#Opage {
+  color: white;
+}
 /*Slideshow css */
 #h2 {
   text-align: center;

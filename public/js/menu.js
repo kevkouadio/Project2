@@ -5,32 +5,33 @@ $(document).ready(function () {
     var orderLi = $("<li>");
     var orderBtn = $("<button>");
     orderBtn.addClass("btn-danger");
-    orderBtn.text("x");
+    orderBtn.append('<i style="font-size:18px" class="fa">&#xf014;</i>');
     var newOrder = $(this).text();
     var orderItem = orderLi.append(newOrder);
     var oItem = orderItem.append(orderBtn);
 
-
-        $('#yOrder').append(oItem);
+        $('.card-text').append(oItem);
       }
     );
-
-    import {
-        categorySection,
-        categoryName,
-        menu
-    } from 'layouts/menu.handlebars';
-    import { itemsList } from 'layouts/menu.handlebars';
-    import {
-        itemContainer,
-        name, 
-    } from 'layouts.menu.handlebars';
-
-    const { string } = PropTypes;
-
-
     //Delete item from menu 
     $(".btn-danger").live("click", function(event) {
         $(this).parent().remove();
     });
+    // 
+    $(".btn-success").on("click", function() {
+        sendOrder();
+        $("#oDiv").empty();
+        $("#oDiv").append("<h3>Your Order has been submited!<h3>")
+
+       });
+
 });
+
+function sendOrder(order) {
+    var content = $("#orderItems");
+        var orderName = $('#Name');
+    var order = {customerName: orderName.val().trim(), order: content.text()};
+    //console.log(order);
+    $.post("/api/orders", order);
+}
+
