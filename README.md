@@ -3,6 +3,11 @@
 
     Restaurant Name - Covid Blues
 
+    Authors-Kouassi Kevin Kouadio
+            Wendy Hintzen
+            Miguel Lopez
+            Tashena Malloy
+
 # User Story:
     As a restuarant owner, 
     I would like a website where I can post the new dishes, 
