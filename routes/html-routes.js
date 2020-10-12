@@ -66,8 +66,31 @@ module.exports = function(app) {
       //pass object to the specified handle bars files
       res.render("home", testmenu);
     });
-
   });
+
+    // route to home page
+    app.get("/", function(req, res) {
+      db.Post.findAll({
+      }).then(function(index) {
+  
+        //create a new array from the array that is returned from the database
+        let newArray = index.map(item => {
+          return {
+            title: item.title,
+            body: item.body,
+            image: item.image
+          }
+        })
+     
+  //create an object and put the array inside of the object
+        let testmenu= {
+          items: newArray
+        };
+  
+        //pass object to the specified handle bars files
+        res.render("home", testmenu);
+      });
+    });
 
   // menu handlebars route.
   app.get("/menu", function(req, res) {
