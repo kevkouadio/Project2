@@ -10,7 +10,7 @@ $(document).ready(function () {
     var orderItem = orderLi.append(newOrder);
     var oItem = orderItem.append(orderBtn);
 
-        $('.card-text').append(oItem);
+        $('#orderItems').append(oItem);
       }
     );
     //Delete item from menu 

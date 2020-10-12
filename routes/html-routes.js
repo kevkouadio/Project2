@@ -44,9 +44,29 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
-  // index route loads view.html
+  // route to home page
   app.get("/home", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html")); 
+    db.Post.findAll({
+    }).then(function(index) {
+
+      //create a new array from the array that is returned from the database
+      let newArray = index.map(item => {
+        return {
+          title: item.title,
+          body: item.body,
+          image: item.image
+        }
+      })
+   
+//create an object and put the array inside of the object
+      let testmenu= {
+        items: newArray
+      };
+
+      //pass object to the specified handle bars files
+      res.render("home", testmenu);
+    });
+
   });
 
   // menu handlebars route.

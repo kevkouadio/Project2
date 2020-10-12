@@ -1,0 +1,54 @@
+
+    <header>
+        <div id="headerbg">
+            <div id="menu">
+                <div id="cssmenu">
+                    <div id="indicatorContainer">
+                        <div id="pIndicator">
+                            <div id="cIndicator"></div>
+                        </div> 
+                    </div>
+                    <ul><li id="menu-button"></li>
+                        <li >
+                            <a href="/home">Home</a></li>                    
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>            
+                                  
+                    </ul> 
+                </div>
+            </div>
+    </header>
+    <div class="container">
+                <h2 id="h2">WELCOME TO COVID BLUES RESTAURANT</h2>
+
+            <div class="slideshow-container">
+                
+        {{#items}}
+            <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="{{this.image}}" alt="{{this.title}}" style="width:100%">
+            <div class="text">{{this.title}}</div>
+            </div>
+        {{/items}}
+            </div>
+            <br>
+
+            <div style="text-align:center">
+        {{#items}}
+            <span class="dot"></span>  
+        {{/items}}
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer_bottom">
+                <div id="footer_inn"><img src="images/logos.jpg" alt="Covid Blues Restaurant &amp; Catering" vspace="13">
+                  <br>
+                  550 Main Street., West Orange, NJ 07052  &nbsp;|&nbsp;  Phone: <a href="tel:973-396-2963">973-396-2963</a><br>
+            
+              </div>
+            </div>
+        </footer>
+        <script src="js/index.js" type="text/javascript"></script>
+        {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> --}}
+        
