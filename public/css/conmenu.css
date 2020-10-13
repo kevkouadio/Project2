@@ -88,10 +88,8 @@
   
   
   }
-  #cssmenu > ul > li {
-   /* display: block; */   
-    position: relative;
-    /* float: left;  remove for centered links */
+  #cssmenu > ul > li {   
+    position: relative;    
     margin: 0;
     padding: 0; 
   }

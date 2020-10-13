@@ -17,31 +17,10 @@
 
 @media screen and (max-width: 980px){
 	#menu{width:100%;}
-	/* #catering{float:none; width:100%; margin:0 auto; text-align:center; padding:0 0 20px 0;}
-	#logo{float:none; width:100%; margin:0 auto; text-align:center; padding:0px;}
-	#online{float:none; width:100%; margin:0 auto; text-align:center; padding:20px 0;} */
-	
-	/* #left{float:none; width:100%; margin:0 auto; text-align:center;}
-	#mid{float:none; width:100%; margin:0 auto; padding:0px;}
-	#right{display:none;} */
-	
-	/* #left_footer{float:none; width:100%; margin:0 auto; text-align:center; padding-bottom:0px;}	
-	#right_footer{float:none; width:100%; margin:0 auto; text-align:center; padding:25px 0;}	
-	
-	#hours_left{float:none; width:100%; margin:0 auto; padding-top:0px;}
-	#hours_right{float:none; width:95%; text-align:center; margin-top:30px;} */
-	
+		
 	#contact_left{float:none; width:100%; margin:0 auto; padding-top:0px; }
 	#contact_right{float:none; width:90%; margin:0 auto; padding-top:30px;}
-
-
-		/* .textright{ text-align:center;}
-		.form1 table, .form1 td, .form1 tr { display: block; }		
-		.form1 td { border: none; position: relative; }
-		.form1{ width:90%;}	
-		
-		.imgright{ float:none; margin:20px auto; display:block; }
-		.imgleft{ float:none; margin:20px auto; display:block; } */
+	
 	}
 
 @media screen and (max-width: 640px){
