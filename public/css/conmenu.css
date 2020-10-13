@@ -26,7 +26,7 @@
     color: #412e1d;
   }
   
-  /*---------DROP DOWN KO CHANGE GARNE ------------*/
+  /*---------DROP DOWN KO CHANGE  ------------*/
   #cssmenu ul ul li a {
     width: 80px;
     border-bottom: 1px solid #eee;
@@ -82,16 +82,16 @@
   }
   #cssmenu > ul {
     position: relative;
-    height:60px; /* menu height */
+    height:100px; /* menu height */
     width: 100%;
-    z-index: 500;
+    z-index: 400;
   
   
   }
   #cssmenu > ul > li {
-   /* display: block;*/
+   /* display: block; */   
     position: relative;
-    /*float: left;   remove for verticale menu*/
+    /* float: left;  remove for centered links */
     margin: 0;
     padding: 0; 
   }

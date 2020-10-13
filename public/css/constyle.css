@@ -1,4 +1,10 @@
-/* mbhuju@gmail.com */
+*,*::after,*::before{
+    box-sizing:content-box ;
+ }
+ /* *,*::after,*::before{
+    box-sizing: border-box;
+ } */
+
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alex+Brush|Lobster');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Poppins:300,400,500,600,700');
 
@@ -25,34 +31,34 @@ HEADER
 	background-size:cover;
 }
 
-#menu{width:80%; margin:0 auto;}
+#menu{width:80%; margin:auto ;}
 
-#headerinn{width:985px; margin:0 auto;}
+/* #headerinn{width:985px; margin:0 auto;}
 #catering{width:25%; float:left; padding:210px 0 0 0;}
 #logo{width:45%; float:left; text-align:center; margin-left:2.5%; padding:35px 0 55px 0;}
 #online{width:25%; float:right; text-align:right; padding:210px 0 0 0;}
-#info{width:80%; margin:0 auto; background:#000; opacity:0.5; text-align:center; padding:3% 2%; color:#FFF; font-size:22px; font-weight:500; line-height:35px; margin-top:35px; margin-bottom:35px;}
+#info{width:80%; margin:0 auto; background:#000; opacity:0.5; text-align:center; padding:3% 2%; color:#FFF; font-size:22px; font-weight:500; line-height:35px; margin-top:35px; margin-bottom:35px;} */
 
 /*******
 BANNER
 *********/
-#banner{width:100%; background:url(../images/bg.png);}
+/* #banner{width:100%; background:url(../images/bg.png);}
 #banner_inn{width:1253px; margin:0 auto;}
 #photo1{width:23.5435%; float:left; margin-right:0.87789%;}
 #photo2{width:25.13966%; float:left; margin-right:0.79808%;}
 #photo3{width:23.6233%; float:left; margin-right:0.79808%;}
-#photo4{width:25.21947%; float:left; }
+#photo4{width:25.21947%; float:left; } */
 
 /****************/
-#content{width:100%; background:url(../images/bg1.jpg) repeat-x #fffffe;}
-	#content_inn{width:1227px; margin:0 auto; padding:55px 0 65px 0; }
+#content{width:100%; background:url(../images/bg1.jpg) repeat-x #fffffe; height: 95%;}
+	/* #content_inn{width:1227px; margin:0 auto; padding:55px 0 65px 0; }
 	#left{width:29%; float:left; padding:40px 0;}
 	#mid{width:37%; float:left; text-align:center; margin-left:2.5%; padding:55px 0 0 0;}
-	#right{width:29%; float:right; padding:40px 0; text-align:right;}
-		#inner{width:1200px; margin:0 auto; padding:45px 0;}
+	#right{width:29%; float:right; padding:40px 0; text-align:right;} */
+#inner{width:1200px; margin:0 auto; padding:45px 0;}
 		
-#hours_left{float:left; width:50%; padding-top:40px; }
-#hours_right{float:right; width:50%; text-align:center;}
+/* #hours_left{float:left; width:50%; padding-top:40px; }
+#hours_right{float:right; width:50%; text-align:center;} */
 
 #contact_left{float:left; width:50%; padding-top:80px; text-align:center; }
 #contact_right{float:right; width:40%; text-align:center; margin-right:5%; }
@@ -61,48 +67,48 @@ BANNER
 /*******
 FOOTER
 *********/
-	#footer_bottom{width:100%; background:#541815; border-top:6px solid #fddd77; }
-	#footer_inn{width:1280px; margin:0 auto; text-align:center; font-size:18px; line-height:35px; padding:16px 0 29px 0; color:#FFF; font-weight:600;}
-
+    #footer_bottom{width:100%; background:#541815; border-top:6px solid #fddd77; bottom: 0; padding: 0; margin-top: 0;}    
+	#footer_inn{width:1280px; margin:0 auto; text-align:center; font-size:16px; line-height:15px; padding:10px 0 15px 0; color:#FFF; font-weight:600;}
+    #footer-contributors {margin-top: 5px; text-align:center; color:bisque;}
 
 /*******
 STYLE
 *********/
 h1{ font-size:45px; line-height:40px; color:#85433b; font-weight:700; margin-top:0; text-transform:uppercase;}
 .style1{font-size:24px; font-weight:600; color:#9a3d39; line-height:30px;}
-.style2{font-family: 'Lobster', cursive; font-size:30px; font-weight:400; color:#f9ba27; line-height:40px;}
-.style3{font-family: 'Alex Brush', cursive; font-size:60px; font-weight:400; color:#250908; line-height:40px;}
+/* .style2{font-family: 'Lobster', cursive; font-size:30px; font-weight:400; color:#f9ba27; line-height:40px;} */
+/* .style3{font-family: 'Alex Brush', cursive; font-size:60px; font-weight:400; color:#250908; line-height:40px;}
 .style4{font-size:36px; font-weight:700; color:#85433b; line-height:40px;}
-.style5{font-size:20px; font-weight:600; color:#793425; line-height:30px; text-transform:uppercase;}
+.style5{font-size:20px; font-weight:600; color:#793425; line-height:30px; text-transform:uppercase;} */
 
 
 /*******
 FORM
 *********/
-.form1{ width:100%;}
+/* .form1{ width:100%;}
 input, textarea, select { height:25px; background:#adb5d7; border:1px solid #dedede; font-size:13px;}
 textarea{ height:100px; }
 .btn{ width:128px; height:40px; font-weight:bold; text-align:center; color:#FFFFFF;	background:#fe0000; border:1px solid #000000; font-size:15px; margin-top:20px; text-align:center; text-transform:uppercase;}
 .email_error{ padding:2px; border:1px solid red; color:red; margin-bottom:5px;}
 .inputsize{ width:100%;}
 .inputzipsize{ width:50px;}
-.textright{ text-align:right;}
+.textright{ text-align:right;} */
 
 /*******
 MISC
 *********/
-.img{border:1px solid #cecac8; padding:5px; }
+/* .img{border:1px solid #cecac8; padding:5px; }
 .imgright{ max-width:95%; float:right; margin-right:30px; }
-.imgleft{ max-width:95%; float:left; margin-right:10px; padding-top:8px; }
+.imgleft{ max-width:95%; float:left; margin-right:10px; padding-top:8px; } */
 
 
 .clear{clear:both;}
 img{max-width:100%;}
 a[href^=tel] { color: inherit; text-decoration: none; }
 
-.tbar{ border-bottom:#b2b2b2 1px solid; padding:10px;}
+/* .tbar{ border-bottom:#b2b2b2 1px solid; padding:10px;}
 
-.back-to-top { position: fixed; bottom: 2em; right: 40px; display: none;}
+.back-to-top { position: fixed; bottom: 2em; right: 40px; display: none;} */
 
 
 .map-responsive{
@@ -117,3 +123,4 @@ a[href^=tel] { color: inherit; text-decoration: none; }
     height:100%;
     width:100%;
     position:absolute;
+}
