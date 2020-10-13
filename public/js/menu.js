@@ -17,16 +17,16 @@ $(document).ready(function () {
     $(".btn-danger").live("click", function(event) {
         $(this).parent().remove();
     });
-    // 
+    //Display order submited message 
     $(".btn-success").on("click", function() {
         sendOrder();
         $("#oDiv").empty();
-        $("#oDiv").append("<h3>Your Order has been submited!<h3>")
+        $("#oDiv").append("<h3>Your order has been submited!<h3>")
 
        });
 
 });
-
+//post order items (name of customer and dishes) 
 function sendOrder(order) {
     var content = $("#orderItems");
         var orderName = $('#Name');
