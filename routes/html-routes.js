@@ -6,10 +6,8 @@
 // =============================================================
 var path = require("path");
 var express = require("express");
-const { title } = require("process");
 const db = require("../models");
-var router = express.Router();
-const Post = require("../models/post")
+     
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -124,6 +122,7 @@ module.exports = function(app) {
       //create a new array from the array that is returned from the database
       let newArray = orders.map(item => {
         return {
+          id: item.id,
           customerName: item.customerName,
           order: item.order
         }

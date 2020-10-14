@@ -2,7 +2,7 @@ module.exports = {
 
   "development": {
     "username": "root",
-    "password": "Computer12",
+    "password": "elboban003",
     "database": "blogger",
     "host": "127.0.0.1",
     "port": 3306,

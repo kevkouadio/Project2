@@ -30,8 +30,8 @@ $(document).ready(function () {
 function sendOrder(order) {
     var content = $("#orderItems");
         var orderName = $('#Name');
-    var order = {customerName: orderName.val().trim(), order: content.text()};
-    //console.log(order);
+    var order = {customerName: orderName.val().trim(), order: content.text().trim()};
+
     $.post("/api/orders", order);
 }
 
