@@ -1,5 +1,7 @@
 # Project 2: CMS of a restaurant website  
 ![](https://img.shields.io/badge/license-MIT-green)
+# video slide show link
+https://youtu.be/Fyg0V46nivY
 
 ## Description
 Concept: The concept of our project was to build a CMS App that would allow a Restaurant owner to be able to post new dishes to her/his restaurant website so that customers can view and order online.
