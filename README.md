@@ -10,11 +10,12 @@ The application has two UI, one for the owner where he can handle all the conten
 ## Table of contents
 * [Description](#Description)
 * [Usage](#Usage)
-* [Tools Used](#Tools_Used)
+* [Tools_Used](#Tools_Used)
 * [License](#License)
 * [Contributing](#Contributing)
 * [Screenshot](#Screenshot)
 * [Links](#Links)
+* [Dev-Team](#Dev-Team)
 * [Questions](#Questions)
 
 ## Usage
@@ -40,7 +41,7 @@ We would be happy if anyone decide to improve it. All comments and suggestions a
         The orders page:
 ![](public/images/screenshots/Orders.png)
 
-##### What the customer use:
+##### What the customer uses:
 
 The home page:
 ![](public/images/screenshots/home.png)
@@ -49,7 +50,7 @@ The menu page:
 The contact page:
 ![](public/images/screenshots/contact.png)
 
-## Tools Used
+## Tools_Used
  - Node and Express Web server
  - Handlebars
  - MySql database
@@ -59,5 +60,10 @@ The contact page:
 - Owner: https://restaurant-cms-project2.herokuapp.com/login
 
 - Customer: https://restaurant-cms-project2.herokuapp.com/ 
+## Dev-Team
+- Kouassi Kevin Kouadio (https://github.com/kevkouadio)
+- Wendy Hintzen (https://github.com/whintzen)
+- Miguel Lopez (https://github.com/chino6989)
+- Tashena Malloy (https://github.com/Sheena15M)
 ## Questions
-Contact me: kevkouadio@gmail.com
+Contact me: kevkouadio@gmail.com or any member of the Dev Team.
