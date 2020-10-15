@@ -20,9 +20,15 @@ $(document).ready(function () {
     //Display order submited message 
     $(".btn-success").on("click", function() {
         sendOrder();
+        
+        if ($("#Name").val()==="" || $("#Name").val()===" " || $("#orderItems").text()==="") {
+            $("#oDiv").append("<h5>Please enter your name before submiting your order!<h5>");
+        }
+        else 
+        {
         $("#oDiv").empty();
         $("#oDiv").append("<h3>Your order has been submited!<h3>")
-
+        }
        });
 
 });
