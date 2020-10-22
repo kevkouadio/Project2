@@ -6,8 +6,8 @@
 // =============================================================
 var express = require("express");
 var exphbs = require("express-handlebars");
+var compression = require('compression')
 
-// app.use(express.static('public/images'));
 
 // Sets up the Express App
 // =============================================================
@@ -26,6 +26,19 @@ app.use(express.static("public"));
 
 app.engine("handlebars", exphbs({ defaultLayout: "menu" }));
 app.set("view engine", "handlebars");
+
+//compression module to accelerate the performances
+app.use(compression({ filter: shouldCompress }))
+ 
+function shouldCompress (req, res) {
+  if (req.headers['x-no-compression']) {
+    // don't compress responses with this request header
+    return false
+  }
+ 
+  // fallback to standard filter function
+  return compression.filter(req, res)
+};
 
 // Routes
 // =============================================================
